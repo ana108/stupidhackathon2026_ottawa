@@ -8,7 +8,7 @@ services:
       args:
         NODE_ENV: ${NODE_ENV}
     ports:
-      - "80:4200"
+      - "4200:4200"
     environment:
       # SSR HttpClient only (browser still uses environment.prod.ts public URL).
       UI_SERVICE_APP: http://backend:3000
