@@ -26,9 +26,10 @@ export class App implements OnInit {
     this.updateWindowSize()
     this.buttonXStart = this.windowWidth - 300
     this.buttonXEnd = this.buttonXStart + 120
+
+    this.buttonYStart = 300
     this.buttonYEnd = this.buttonYStart + 20
 
-    this.buttonYStart = 600
     document.addEventListener('mousemove', this.onMouseMove, { capture: true })
   }
 
