@@ -150,6 +150,8 @@ export class App implements AfterViewInit {
     }
   }
 
-
+  gotIt($event: any) {
+    alert('Success!')
+  }
 
 }

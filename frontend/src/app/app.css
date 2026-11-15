@@ -78,6 +78,12 @@ h1 {
     margin-top: 5rem;
 }
 
+h3 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
 
 .quantity-stepper {
     display: inline-flex;
