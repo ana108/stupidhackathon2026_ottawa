@@ -59,4 +59,4 @@ jobs:
           script: |
             docker load -i hackathonfrontend.tar
             docker load -i hackathonbackend.tar
-            cd hackathon && docker compose up -d --force-recreate
+            cd hackathon_template && docker compose up -d --force-recreate
