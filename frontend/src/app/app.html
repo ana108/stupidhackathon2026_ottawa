@@ -1,8 +1,41 @@
-<div>
+<h1>Better than even pop ups!</h1>
+
+<div class="cartPage">
+  <div class="item">
+    <span>Review Item (1)</span>
+    <hr />
+    <div class="itemDetails">
+      <img src="/pizza.png" />
+      <div>
+        <h4>Artisanal Pepperoni Pizza</h4>
+        <p>Yummy, yummy pizza</p>
+        <div class="row pizzaPrice">
+          <span>$28.00</span>
+          <div class="quantity-stepper" role="group" aria-label="Quantity selector">
+            <button type="button" aria-label="Decrease quantity">−</button>
+            <span class="quantity-value">1</span>
+            <button type="button" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="receipt">
-
-
-    <button class="checkoutBtn" [style.left.px]="buttonXStart" [style.top.px]="buttonYStart">Pay Now</button>
+    <h3>Order Summary</h3>
+    <div class="row">
+      <span>Item Subtotal</span>&nbsp;
+      <span>$28.00</span>
+    </div>
+    <div class="row">
+      <span>Shipping</span>&nbsp;
+      <span>$0.00</span>
+    </div>
+    <hr class="separator" />
+    <div class="row">
+      <span class="bolded">Total Amount</span>&nbsp;
+      <span class="bolded blue">$20.00</span>
+    </div>
+    <button #evilBtn class="checkoutBtn">Pay Now</button>
   </div>
 </div>
 <router-outlet />
